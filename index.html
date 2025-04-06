@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky to Have You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe9e9, #ffc1c1);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 1.5em 0;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .photo-grid img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+            color: #444;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        video {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #ff6f61;
+            color: white;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>I’m Lucky to Have You, My Momo!</h1>
+        <p>Every moment with you is a treasure.
+            <h2>I wolf you momo</h2>
+        </p>
+    </header>
+    <section>
+        <h2>Our Beautiful Memories</h2>
+        <div class="photo-grid">
+            <img src="img/WhatsApp Image 2025-04-06 at 04.50.43_9d21e867.jpg" alt="Memory 1" onclick="toggleContent('memory1')">
+            <img src="img/WhatsApp Image 2025-04-06 at 04.50.43_f09d71fe.jpg" alt="Memory 2" onclick="toggleContent('memory2')">
+            <img src="img/WhatsApp Image 2025-04-06 at 04.50.42_f0f8c429.jpg" alt="Memory 3" onclick="toggleContent('memory3')">
+        </div>
+        <div id="memory1" class="hidden-content">
+            <p> us in black 
+                <h1>we look cute naa</h1>
+            </p>
+            <video controls>
+                <source src="img/WhatsApp Video 2025-04-06 at 04.50.44_5de86133.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="memory2" class="hidden-content">
+            <p> our first trip with our second kis
+                <h1>hehehehehe
+                </h1> </p>
+            <video controls>
+                <source src="img/WhatsApp Video 2025-04-06 at 04.50.43_0c73e489.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="memory3" class="hidden-content">
+            <p>A precious moment we’ll cherish forever. I love you!</p>
+            <video controls>
+                <source src="img/WhatsApp Video 2025-04-06 at 04.50.44_04dda670.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <footer>
+        <p>Made with ❤️ by your GOD </p>
+        <footer>
+            <audio controls autoplay loop>
+                <source src="img/Die With A Smile - PagalWorld.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+        <p> I love you momo , i know we fight a lot but they say that the more you love each other the more you will fight so the fight is only a old saying i will alwasys by your side so dont worry i love you forever my momo  </p>
+    </footer>
+</body>
+</html>
